@@ -1,0 +1,41 @@
+@use './variables' as *;
+button {
+    @include button-styler;
+    a {
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+        opacity: 0.8;
+        &:hover {
+            opacity: 1;
+        }
+    
+        &:focus {
+            opacity: 1;
+        }
+    }
+    &.active-btn{
+        @include active-btn-styler;
+        &:hover {
+            background-color: $deep-black;
+            color: $amber;
+        }
+        &:focus {
+            background-color: $deep-black;
+            color: $amber;
+        }
+        
+    }
+    &.inactive-btn{
+        @include inactive-btn-styler;
+        &:hover {
+            color: $amber;
+            border:$deep-black 1px solid;
+        }
+        
+        &:focus {
+            color: $amber;
+            border:$deep-black 1px solid;
+        }
+    }
+}
