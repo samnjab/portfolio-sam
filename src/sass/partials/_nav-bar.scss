@@ -1,0 +1,46 @@
+@use '../partials/variables'as *;
+
+// Menu Nav: 
+// font-family: "poppins-medium";
+// font-size: 18px;
+// font-weight: 500;
+// font-style: normal;
+// text-align: right;
+// color: #FFCC74;
+.nav-bar {
+    width: 100%;
+    @include flex-center(row, space-between, center);
+    li {
+        flex-basis: 25%;
+    }
+    .active {
+        border-bottom: $amber 5px solid;
+    }
+
+    .linked {
+        border-bottom: rgb(255, 255, 255, 0) 5px solid;
+        a{
+            color:$blue-off-white;
+        }
+    }
+}
+
+.nested {
+    li {
+        flex-basis: 45%;
+
+        a {
+            color: $text-color;
+
+            &.active {
+                border-bottom: $off-white 5px solid;
+            }
+
+            &.linked {
+                border-bottom: rgb(255, 255, 255, 0) 5px solid;
+
+            }
+        }
+    }
+
+}

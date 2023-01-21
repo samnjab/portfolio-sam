@@ -1,0 +1,311 @@
+$primary-color: #0F4067;
+$text-color:white;
+$secondary-color:#0A0C0C;
+$tertiary-color:#1F2224;
+$off-white:#f0f1f2;
+$border-color:#33383A;
+
+$min-dim:320px;
+$mobile:480px;
+$tablet:768px;
+$sm-scr:1024px;
+$lg-scr:1200px;
+
+
+$black:#2C2C2C;
+$white:#FAFAFA;
+$ice:#EFFDF3;
+
+
+
+// colors: 
+$amber:#FFCC74;
+$deep-black:rgba(0, 0, 0, 1);
+$thin-black:rgba(14, 14, 14, 1);
+$off-black:rgba(46, 46, 46, 1);
+$blue-off-white:#E3EAEF;
+$red-off-white: #DDDDDD;
+$grey:#8D959A;
+
+// HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+@mixin nav-styler {
+    font-family: "poppins";
+    font-style: normal;
+    font-size:18px;
+    font-weight: 500;
+}
+
+// I am Sam J:
+// font-family: "poppins-bold";
+// font-size: 64px;
+// font-weight: bold;
+// font-style: normal;
+// text-align: left;
+// color: #E3EAEF;
+
+@mixin header-styler {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    color:$blue-off-white;
+}
+
+// Hi there:
+// font-family: "poppins-semibold";
+// font-size: 16px;
+// font-weight: 500;
+// font-style: normal;
+// text-align: left;
+// color: #E3EAEF;
+
+@mixin pop-text-styler {
+    color: $amber;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@mixin button-styler {
+    text-transform: uppercase;
+    text-align: center;
+    width: 163px;
+    height: 53px;
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+// A Web Developer .... 
+// font-family: "poppins-regular";
+// font-size: 24px;
+// font-weight: 400;
+// font-style: normal;
+// text-align: left;
+// color: #8D959A;
+
+@mixin p-styler-1 {
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    color:$grey;
+}
+
+// The yellow line:
+// width: 45px;
+// height: 6px;
+// background: rgba(255, 204, 116, 1)
+
+@mixin accent-line-styler {
+    width: 45px;
+    height: 6px;
+    background-color: $amber;
+}
+
+// Active button:
+    // width: 163px;
+    // height: 53px;
+    // background: rgba(255, 204, 116, 1)
+    // Text inside active button : 
+        // font-family: "poppins-semibold";
+        // font-size: 16px;
+        // font-weight: 500;
+        // font-style: normal;
+        // text-align: left;
+        // color: #000000;
+@mixin active-btn-styler {
+    color: $deep-black;
+    background-color: $amber;
+}
+// Inactive button:
+    // width: 163px;
+    // height: 53px;
+    // border-color: rgba(255, 204, 116, 1);
+    // border-width: 1px;
+    // border-style: solid 
+    // text:
+        // font-family: "poppins-semibold";
+        // font-size: 16px;
+        // font-weight: 500;
+        // font-style: normal;
+        // text-align: left;
+        // color: #E3EAEF;
+@mixin inactive-btn {
+    color: $blue-off-white;
+    background-color: $deep-black;
+    border:$amber solid 1px;
+}
+
+// Triangle:
+// width: 142px;
+// height: 142px;
+// background: rgba(14, 14, 14, 1)
+
+
+// Circle:
+// width: 83px;
+// height: 83px;
+// background: rgba(0, 0, 0, 1)
+// Rectangle:
+// width: 161px;
+// height: 71px;
+// background: rgba(0, 0, 0, 1)
+
+@mixin shape-styler ($width, $height) {
+    width: $width;
+    height: $height;
+    background-color: $deep-black;
+}
+
+// Side bar:
+// width: 122px;
+// height: 952px;
+// background: rgba(14, 14, 14, 1)
+
+// burger button: 
+// width: 30px;
+// height: 26px;
+// background: #FFCC74
+
+// Search icon:
+// width: 20px;
+// height: 20px;
+// background: #E3EAEF
+
+// socials: 
+// width: 25px;
+// height: 166px;
+
+// Divider
+// width: 1922px;
+// height: 4px;
+// background: rgba(46, 46, 46, 1)
+
+@mixin divider($color) {
+    width: 1922px;
+    height: 4px;
+    background-color:$color;
+}
+
+// About >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+// base: 
+// width: 757px;
+// height: 705px;
+// background: rgba(1, 1, 1, 1)
+
+// image: 
+// width: 782px;
+// height: 728px;
+// background: #DDDDDD
+
+// Signature: 
+// width: 174px;
+// height: 48px;
+
+// Inactive btn 
+// width: 172px;
+// height: 53px;
+// border-color: rgba(255, 204, 116, 1);
+// border-width: 1px;
+// border-style: solid;
+// text 
+// font-family: "poppins-semibold";
+// font-size: 16px;
+// font-weight: 500;
+// font-style: normal;
+// text-align: left;
+// color: #E3EAEF;
+
+// line:
+// width: 45px;
+// height: 6px;
+// background: rgba(255, 204, 116, 1)
+
+// about before line
+// font-family: "poppins-semibold";
+// font-size: 16px;
+// font-weight: 500;
+// font-style: normal;
+// text-align: left;
+// color: #FFCC74;
+
+// About Me 
+// font-family: "poppins-semibold";
+// font-size: 36px;
+// font-weight: 500;
+// font-style: normal;
+// text-align: left;
+// color: #E3EAEF;
+
+@mixin sub-header-styler {
+    font-size: 36px;
+    font-weight: 500;
+    font-style: normal;
+    color:$blue-off-white;
+}
+
+// description:
+// font-family: "poppins-regular";
+// font-size: 16px;
+// font-weight: 400;
+// font-style: normal;
+// text-align: left;
+// color: #8D959A;
+
+@mixin p-styler-2 {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    color:$grey;
+}
+
+// Divider:
+// width: 1922px;
+// height: 4px;
+// background: rgba(46, 46, 46, 1)
+
+
+
+
+@mixin flex-center($direction:row, $main-axis:flex-start, $cross-axis:flex-start) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $main-axis;
+    align-items: $cross-axis;
+}
+
+
+
+@mixin responsive-size($rem-size, $rem-weight, $vw-weight) {
+    font-size: calc(($rem-size * $rem-weight) + $vw-weight);
+}
+
+@mixin bleed($max-width) {
+    max-width: $max-width;
+    width: 100%;
+}
+
+@mixin wrap($margin:0px, $number-in-a-row:2, $min-width, $max-width) {
+    margin: 0 $margin;
+    flex-basis: calc((100%/$number-in-a-row) - (2*$margin));
+    min-width: $min-width;
+    flex-grow: 1;
+    max-width: $max-width;
+}
+
+
+@mixin transform($property) {
+    -webkit-transform: $property;
+    -ms-transform: $property;
+    transform: $property;
+
+}
+
+@mixin mobile {
+    @media (max-width:$mobile) {
+        @content
+    }
+}
