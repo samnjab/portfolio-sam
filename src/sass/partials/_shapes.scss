@@ -1,0 +1,57 @@
+@use './variables' as *;
+
+
+.shapes{
+    @include flex-center(row, space-between, center);
+    position:relative;
+    @include responsive-div($rem-size:0rem, $rem-weight:1, $vw-weight:10vw);
+    
+      
+}
+
+.triangle-1 {
+    width: 0;
+    height: 0;
+    $container-dim: calc((0rem * 1) + 10vw);
+    border-top: calc(0.125 * $container-dim) solid transparent;
+    border-left: calc(0.375 * $container-dim) solid $pink;
+    border-bottom: calc(0.25 * $container-dim) solid transparent;
+    position:absolute;
+}
+
+.triangle-2{
+    width: 0;
+    height: 0;
+    $container-dim: calc((0rem * 1) + 10vw);
+    border-top: calc(0.125 * $container-dim) solid transparent;
+    border-left: calc(0.25 * $container-dim) solid $maroon;
+    border-bottom: calc(0.25 * $container-dim) solid transparent;
+    position:absolute;
+    transform:rotate(-30deg);
+    right:0;
+    bottom:0;
+}
+
+.circle {
+    width:36%;
+    height:36%;
+    border-radius: 50%;
+    background-color: $blue;
+    position:absolute;
+    top:52%;
+    left:25%;
+}
+
+.rectangle{
+    width:62.5%;
+    height:20%;
+    transform: rotate(30deg);
+    background-color: $amber;
+    position:absolute;
+    top:25%;
+    left:36%;
+}
+
+.line{
+    @include accent-line-styler;
+}

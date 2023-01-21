@@ -25,22 +25,7 @@
     }
 }
 
-.nested {
-    li {
-        flex-basis: 45%;
 
-        a {
-            color: $text-color;
-
-            &.active {
-                border-bottom: $off-white 5px solid;
-            }
-
-            &.linked {
-                border-bottom: rgb(255, 255, 255, 0) 5px solid;
-
-            }
-        }
-    }
-
+.side-nav{
+    background-color: $amber;
 }

@@ -26,6 +26,9 @@ $off-black:rgba(46, 46, 46, 1);
 $blue-off-white:#E3EAEF;
 $red-off-white: #DDDDDD;
 $grey:#8D959A;
+$pink:#F6B7B6;
+$maroon:#C15C66;
+$blue:#1282A2;
 
 // HEADER >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -101,8 +104,10 @@ $grey:#8D959A;
 // background: rgba(255, 204, 116, 1)
 
 @mixin accent-line-styler {
+    display: inline-block;
     width: 45px;
     height: 6px;
+    margin: 2.5px 5px;
     background-color: $amber;
 }
 
@@ -288,6 +293,10 @@ $grey:#8D959A;
 
 @mixin responsive-size($rem-size, $rem-weight, $vw-weight) {
     font-size: calc(($rem-size * $rem-weight) + $vw-weight);
+}
+@mixin responsive-div ($rem-size, $rem-weight, $vw-weight) {
+    width:calc(($rem-size * $rem-weight) + $vw-weight);
+    height:calc(($rem-size * $rem-weight) + $vw-weight);
 }
 
 @mixin bleed($max-width) {
