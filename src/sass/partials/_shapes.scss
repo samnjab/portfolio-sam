@@ -1,11 +1,13 @@
 @use './variables' as *;
 
+$dim: 200px;
+
 
 .shapes{
     @include flex-center(row, space-between, center);
     position:relative;
-    @include responsive-div($rem-size:0rem, $rem-weight:1, $vw-weight:10vw);
-    
+    width:$dim;
+    height:$dim;
       
 }
 
@@ -13,19 +15,19 @@
     width: 0;
     height: 0;
     $container-dim: calc((0rem * 1) + 10vw);
-    border-top: calc(0.125 * $container-dim) solid transparent;
-    border-left: calc(0.375 * $container-dim) solid $pink;
-    border-bottom: calc(0.25 * $container-dim) solid transparent;
-    position:absolute;
+    border-top: calc(0.125 * $dim) solid transparent;
+    border-left: calc(0.375 * $dim) solid $pink;
+    border-bottom: calc(0.25 * $dim) solid transparent;
+    position:absolute;  
 }
 
 .triangle-2{
     width: 0;
     height: 0;
     $container-dim: calc((0rem * 1) + 10vw);
-    border-top: calc(0.125 * $container-dim) solid transparent;
-    border-left: calc(0.25 * $container-dim) solid $maroon;
-    border-bottom: calc(0.25 * $container-dim) solid transparent;
+    border-top: calc(0.125 * $dim) solid transparent;
+    border-left: calc(0.25 * $dim) solid $maroon;
+    border-bottom: calc(0.25 * $dim) solid transparent;
     position:absolute;
     transform:rotate(-30deg);
     right:0;
@@ -33,13 +35,14 @@
 }
 
 .circle {
-    width:36%;
-    height:36%;
+    width:50px;
+    height:50px;
     border-radius: 50%;
     background-color: $blue;
     position:absolute;
     top:52%;
     left:25%;
+
 }
 
 .rectangle{
