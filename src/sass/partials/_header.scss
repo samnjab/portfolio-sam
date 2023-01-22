@@ -8,12 +8,18 @@ header {
         height: 100%;
         padding: 20px 0px;
         @include flex-center(row, space-between, stretch);
+        // flex-wrap: wrap;
         .main{
             flex-basis:90%;
             @include flex-center(column, space-between, flex-start);
+            flex-grow:1;
+            max-width: 100%;
             .main-nav {
                 align-self: flex-end;
                 // width:50%;
+                &.hide {
+                    display: none;
+                }
                 .nav-bar {
                     flex-wrap: wrap;
                     li {
@@ -29,24 +35,38 @@ header {
             border-left:$amber 0.7px solid;
             border-top:$amber 0.7px solid;
             margin:10px 0;
+            &.hide{
+                display:none;
+            }
             .nav-bar{
                 width:100%;
                 height:100%;
                 @include flex-center(column, space-between, center);
                 .navigation{
                     width:100%;
-                    flex-basis:25%;
+                    flex-basis:30%;
+                    background-color: antiquewhite;
                     @include flex-center(column, space-between, center);
                     .menu-btn{
                         width:100%;
                         flex-basis: 50%;
-
                     }
                     i{
                         width:100%;
                         flex-basis: 50%;
                         color:$amber;
+                        background-color: lime;
                     }
+                }
+                .quick-buttons{
+                    width:100%;
+                    background-color: pink;
+                    flex-basis:30%;
+                }
+                .socials{
+                    width:100%;
+                    background-color: royalblue;
+                    flex-basis:30%;
                 }
             }
 
@@ -62,5 +82,26 @@ header {
 
             }
         }
+    }
+}
+
+.intro {
+    flex-basis:90%;
+    @include flex-center(row, space-between, flex-start);
+    
+
+
+    .shapes {
+        align-self: flex-start;
+        margin-right: 25px;
+        position:relative;
+        top:70px;
+    }
+
+    .text {
+        margin: 0 25px;
+        align-self: flex-end;
+        flex-basis: 90%;
+
     }
 }

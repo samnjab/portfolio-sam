@@ -10,15 +10,4 @@
 @use './partials/form';
 @use './partials/media-queries';
 
-.intro{
-    @include flex-center(row, space-between, center);
-    .shapes{
-        align-self: flex-start;
-        margin-right:25px;
-    }
-    .text{
-        margin:0 25px;
-        align-self: flex-end;
-    }
-}
 
