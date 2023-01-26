@@ -31,7 +31,8 @@ section {
 }
 
 
-p{
+p,
+text{
     
     @include p-styler-2();
     margin-bottom:1rem;

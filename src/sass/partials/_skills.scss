@@ -1,0 +1,168 @@
+@use './variables' as *;
+
+.skills{
+    .wrapper{
+        @include flex-center(row, space-between, center);
+        flex-wrap:wrap;
+        .header{
+            flex-basis:100%;
+        }
+        .front-end{
+            @include wrap($margin:10px, $number-in-a-row:2, $min-width:320px, $max-width:1000px);
+            @include flex-center(column, space-between, flex-start);
+            margin-top:1rem;
+            margin-bottom:1rem;
+            .skill{
+                width:100%;
+            }
+        }
+        .backend{
+            @include wrap($margin:10px, $number-in-a-row:2, $min-width:320px, $max-width:400px);
+            @include flex-center(row, space-around, space-around);
+            margin-top:1rem;
+            margin-bottom:1rem;
+            flex-wrap: wrap;
+            .skill{
+                width:147px;
+                height:147px;
+                flex-grow:0;
+                margin:1rem 0;
+                // @include wrap($margin:5px, $number-in-a-row:2, $min-width:147px, $max-width:800px);
+            }
+        }
+    }
+}
+
+.skill {
+    @include flex-center(row, space-between, center);
+    flex-wrap: wrap;
+
+    .skill-title {
+        flex-basis: 50%;
+    }
+
+    .skill-percent {
+        flex-basis: 50%;
+    }
+
+    .progress-bar {
+        flex-basis: 100%;
+    }
+}
+
+.front-end{
+    .skill-title{
+        @include skill-title-1();
+    }
+    .skill-percent{
+        @include percent-progress-1();
+    }
+    .progress-bar{
+        @include progress-bar();
+        position:relative;
+        &.html{
+            .overline-bar{
+                @include overline-bar($percent: 0.98);
+                position: absolute;
+                top: 0;
+                left: 0;
+                .circle-end {
+                    @include circle-end();
+                    position: absolute;
+                    left:100%;
+                    top: -8px;
+                }
+            }
+        }
+        &.css {
+            .overline-bar {
+                @include overline-bar($percent: 0.90);
+                position: absolute;
+                top: 0;
+                left: 0;
+                .circle-end {
+                    @include circle-end();
+                    position: absolute;
+                    left: 100%;
+                    top: -8px;
+                }
+            }
+        }
+        &.photoshop {
+            .overline-bar {
+                @include overline-bar($percent: 0.80);
+                position: absolute;
+                top: 0;
+                left: 0;
+                .circle-end {
+                    @include circle-end();
+                    position: absolute;
+                    left: 100%;
+                    top: -8px;
+                }
+            }
+        }
+        &.ux {
+            .overline-bar {
+                @include overline-bar($percent: 0.50);
+                position: absolute;
+                top: 0;
+                left: 0;
+                .circle-end {
+                    @include circle-end();
+                    position: absolute;
+                    left: 100%;
+                    top: -8px;
+                }
+            }
+        }
+    }
+}
+
+.backend{
+    @include flex-center(row, space-between, center);
+    flex-wrap:wrap;
+    .skill{
+        // @include wrap($margin:10px, $number-in-a-row:2, $min-width:200px, $max-width:600px);
+        position:relative;
+        @include flex-center(row, center, center);
+    }
+    .skill-title{
+        @include skill-title-2();
+        z-index:2;
+        margin-bottom:0;
+        display:block;
+        margin-top:2rem;
+        height:2px;
+        position:relative;
+    }
+    .skill-percent{
+        @include percent-progress-2();
+        z-index: 2;
+        margin-bottom:1rem;
+    }
+    .skill-circle{
+        @include flex-center(column, center,center);
+        width:147px;
+        height:147px;
+        position:relative;
+        
+    }
+    .svg-text{
+        @include flex-center(column, center, center);
+        position:absolute;
+        top:-2%;
+        left:37%;
+    }
+    .nodejs{
+        .svg-text{
+            left:40px;
+        }
+    }
+    .react{
+        .svg-text{
+            left:45px;
+        }
+    }
+
+}

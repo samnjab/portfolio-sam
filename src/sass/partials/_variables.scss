@@ -16,6 +16,10 @@ $black:#2C2C2C;
 $white:#FAFAFA;
 $ice:#EFFDF3;
 
+// Fonts
+// font-family: 'Lato', sans-serif;
+// font-family: 'Poppins',sans-serif;
+
 
 
 // colors: 
@@ -39,6 +43,7 @@ $blue:#1282A2;
     font-style: normal;
     font-size:18px;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 // I am Sam J:
@@ -65,7 +70,7 @@ $blue:#1282A2;
 // color: #E3EAEF;
 
 @mixin pre-header-styler {
-    color: $blue-off-white;
+    color: $amber;
     font-size: 16px;
     font-weight: 500;
     font-style: normal;
@@ -281,6 +286,131 @@ $blue:#1282A2;
 // height: 4px;
 // background: rgba(46, 46, 46, 1)
 
+// special skills
+
+// Backend
+// width: 46px;
+// height: 325px;
+// opacity: 0.15;
+// border-color: rgba(227, 234, 239, 1);
+// border-width: 1px;
+// border-style: solid;
+// font-family: "poppins-extrabold";
+// font-size: 64px;
+// font-weight: bold;
+// font-style: normal;
+// text-align: center;
+// color: #000000;
+
+// progress circles 
+// width: 147px;
+// height: 147px;
+
+
+// percent progress 
+// font-family: "lato-bold";
+// font-size: 18px;
+// font-weight: bold;
+// font-style: normal;
+// text-align: center;
+// color: #FFCC74;
+@mixin percent-progress-2() {
+    font-family: "lato";
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color:$amber;
+    display:block;
+}
+
+// skill title
+// font-family: "lato-bold";
+// font-size: 22px;
+// font-weight: bold;
+// font-style: normal;
+// text-align: center;
+// color: #EEEEEE;
+@mixin skill-title-2(){
+    font-family: "lato";
+    font-size: 18px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+    color:$red-off-white;
+    text-transform: uppercase;
+    displau:block;
+}
+
+// progress bar
+// width: 572px;
+// height: 13px;
+// background: rgba(31, 26, 26, 1)
+@mixin progress-bar(){
+    display:block;
+    width: 90%;
+    height: 7px;
+    background-color: rgb(31, 26, 26, 1);
+}
+// yellow overline
+// width: 522px;
+// height: 13px;
+// background: rgba(255, 204, 116, 1)
+@mixin overline-bar($percent){
+    display: block;
+    width: calc($percent * 90%);
+    height: 7px;
+    background-color: $amber;
+}
+// circle
+// width: 22px;
+// height: 23px;
+// border-color: rgba(255, 204, 116, 1);
+// border-width: 2px;
+// border-style: solid;
+@mixin circle-end(){
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;;
+    border:$amber 2px solid;
+    background-color: $off-black;
+    // position:absolute;
+    // left:$percent;
+    // top:-10px;
+}
+
+// skill title
+// font-family: "poppins-regular";
+// font-size: 12px;
+// font-weight: 400;
+// font-style: normal;
+// text-align: center;
+// color: #8D959A;
+
+@mixin skill-title-1(){
+    font-family: "poppins";
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color:$blue-off-white;
+    text-transform: uppercase;
+}
+// percent
+// font-family: "poppins-regular";
+// font-size: 16px;
+// font-weight: 400;
+// font-style: normal;
+// text-align: center;
+// color: #FFCC74;
+@mixin percent-progress-1(){
+    font-family: "poppins";
+    font-size: 16px;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: $amber;
+}
 
 
 
@@ -296,10 +426,7 @@ $blue:#1282A2;
 @mixin responsive-size($rem-size, $rem-weight, $vw-weight) {
     font-size: calc(($rem-size * $rem-weight) + $vw-weight);
 }
-@mixin responsive-div ($rem-size, $rem-weight, $vw-weight) {
-    width:calc(($rem-size * $rem-weight) + $vw-weight);
-    height:calc(($rem-size * $rem-weight) + $vw-weight);
-}
+
 
 @mixin bleed($max-width) {
     max-width: $max-width;

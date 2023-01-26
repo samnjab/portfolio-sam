@@ -1,0 +1,20 @@
+@use './variables' as *;
+
+.circle-bg {
+    stroke: $off-black;
+    fill: none;
+    stroke-width: 2;
+}
+.circle {
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+    stroke: $amber;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}

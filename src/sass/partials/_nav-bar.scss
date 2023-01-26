@@ -8,8 +8,9 @@
 // text-align: right;
 // color: #FFCC74;
 .nav-bar {
+    @include nav-styler();
     width: 100%;
-    @include flex-center(row, space-between, center);
+    @include flex-center(row, space-between, baseline);
     li {
         flex-basis: 25%;
     }
@@ -24,8 +25,6 @@
         }
     }
 }
-
-
 .side-nav{
     background-color: $amber;
 }

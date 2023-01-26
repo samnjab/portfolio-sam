@@ -152,6 +152,7 @@ header {
         }
         .pre-header{
             @include pre-header-styler();
+            color:$red-off-white;
         }
 
     }
