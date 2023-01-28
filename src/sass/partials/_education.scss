@@ -1,0 +1,135 @@
+@use './variables' as *;
+
+.education{
+    .header{
+        text-align:center;
+    }
+    i{
+        font-size:3rem;
+        color:$blue-off-white;
+    }
+}
+
+
+.content{
+    @include flex-center(row, center, center);
+    width:100%;
+    margin:0 auto;
+    position:relative;
+    height:1115px;
+    .line{
+        position:absolute;
+        background-color: $amber;
+        width:2px;
+        height:1115px;
+        left:calc(50% - 6px);
+        z-index:1;
+    }
+    .left {
+        flex-basis: 48%;
+        height:1115px;
+        @include flex-center(column, space-between, flex-end);
+        text-align:right;
+        .point{
+            height:151px;
+            @include flex-center(column, center, center);
+        }
+    }
+    .right {
+        flex-basis: 48%;
+        height:1115px;
+        text-align:left;
+        @include flex-center(column, space-between, flex-start);
+        .point {
+            height: 151px;
+            @include flex-center(column, center, center);
+        }
+    }
+    .center{
+        width:4px;
+        height:1115px;
+        margin:0 50px;
+        @include flex-center(column, space-between, center);
+        .point {
+            height: 151px;
+            // margin: 2.5rem;
+            @include flex-center(column, center, center);
+        }
+       .outer{
+           display:block;
+           border-top:1px $amber solid;
+           border-right:$amber solid 1px;
+           border-radius: 50%;
+           width:30px;
+           height:30px;
+           position:relative;
+           z-index:2;
+           background-color: $deep-black;
+       }
+        .inner {
+            display:block;
+            border: 0.5px $amber solid;
+            background-color: $amber;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            left:4px;
+            top:4px;
+            z-index:3;
+        }
+    }
+}
+
+.date{
+    font-family: "poppins";
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    margin-bottom:0;
+    line-height: 1.2rem;
+    display:inline-block;
+    width:100%;
+}
+
+.description{
+    font-family: "poppins";
+    font-size: 14px;
+    font-weight: 400;
+    font-style: normal;
+    color: $blue-off-white;
+    margin-bottom:0;
+    line-height: 1.2rem;
+    display:inline-block;
+    width:100%;
+}
+.title{
+    font-family: "poppins";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: normal;
+    color: $amber;
+    margin-bottom:0;
+    line-height: 1.2rem;
+    display:inline-block;
+    width:100%;
+}
+.institution{
+    font-family: "poppins";
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    color: $blue-off-white;
+    margin-bottom:0;
+    line-height: 1.2rem;
+    display:inline-block;
+    width:100%;
+}
+        
+
+
+
+// title
+
+
+// place

@@ -2,16 +2,15 @@
 
 .skills{
     .wrapper{
-        @include flex-center(row, space-between, center);
+        @include flex-center(row, space-around, center);
         flex-wrap:wrap;
         .header{
             flex-basis:100%;
         }
         .front-end{
-            @include wrap($margin:10px, $number-in-a-row:2, $min-width:320px, $max-width:1000px);
+            @include wrap($margin:20px, $number-in-a-row:2, $min-width:350px, $max-width:400px);
             @include flex-center(column, space-between, flex-start);
-            margin-top:1rem;
-            margin-bottom:1rem;
+            margin: 1rem 40px 1rem 0px;
             .skill{
                 width:100%;
             }
@@ -19,9 +18,8 @@
         .backend{
             @include wrap($margin:10px, $number-in-a-row:2, $min-width:320px, $max-width:400px);
             @include flex-center(row, space-around, space-around);
-            margin-top:1rem;
-            margin-bottom:1rem;
-            flex-wrap: wrap;
+            margin: 1rem 0 1rem 20px;
+            // flex-wrap: wrap;
             .skill{
                 width:147px;
                 height:147px;
@@ -51,14 +49,23 @@
 }
 
 .front-end{
+    .skill{
+        @include flex-center(row, space-between, baseline);
+        flex-wrap:wrap;
+        margin:1rem 0;
+    }
     .skill-title{
         @include skill-title-1();
+        @include wrap($margin:10px, $number-in-a-row:2, $min-width:200px, $max-width:400px);
+
     }
     .skill-percent{
         @include percent-progress-1();
+        @include wrap($margin:10px, $number-in-a-row:2, $min-width:fit-content, $max-width:fit-content);
     }
     .progress-bar{
         @include progress-bar();
+        flex-basis:100%;
         position:relative;
         &.html{
             .overline-bar{
@@ -120,8 +127,37 @@
 }
 
 .backend{
-    @include flex-center(row, space-between, center);
-    flex-wrap:wrap;
+    @include flex-center(row, space-around, center);
+    position:relative;
+    h2 {
+        opacity: 0.15;
+        font-family: "poppins";
+        font-size: 54px;
+        font-weight: bold;
+        font-style: normal;
+        text-align: center;
+        color: $deep-black;
+        letter-spacing: 1px;
+        line-height:24px;
+        margin: 0 0 20px 0;
+        text-shadow: $blue-off-white 2px 2px 8px;
+        -webkit-text-stroke: 2px $blue-off-white;
+        text-transform: uppercase;
+        transform-origin: 0 0;
+        transform: rotate(-90deg);
+        width:325px;
+        height:46px;
+        position:absolute;
+        bottom:-10%;
+        left:-5%;
+        // margin-left:-200px;
+        // margin-bottom:120px;
+    }
+    .skills{
+        @include flex-center(row, space-between, center);
+        flex-wrap:wrap;
+        padding-left:40px;
+    }
     .skill{
         // @include wrap($margin:10px, $number-in-a-row:2, $min-width:200px, $max-width:600px);
         position:relative;
@@ -164,5 +200,11 @@
             left:45px;
         }
     }
-
+    .php{
+        .svg-text {
+            left: 38px;
+        }
+    }
 }
+    
+

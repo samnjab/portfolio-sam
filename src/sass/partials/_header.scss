@@ -1,5 +1,4 @@
 @use "variables"as *;
-
 header {
     background-color: $deep-black;
     padding-top: 1.5rem;
@@ -40,8 +39,8 @@ header {
         .side-nav {
             flex-basis: 7%;
             background-color: $deep-black;
-            border-left:$pink 0.7px solid;
-            // border-top:$pink 0.7px solid;
+            border-left:$amber 0.7px solid;
+            // border-top:$amber 0.7px solid;
             margin:10px 0;
             &.hide{
                 display:none;
@@ -78,9 +77,9 @@ header {
                         min-width:fit-content;
                         height: 43px;
                         min-height:fit-content;
-                        border: $pink 1px solid;
+                        border: $amber 1px solid;
                         background-color: $deep-black;
-                        color:$pink;
+                        color:$amber;
                         margin:1rem 0px 1rem 10px;
                         &:hover {
                             color: $amber;

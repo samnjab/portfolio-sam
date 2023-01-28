@@ -1,0 +1,89 @@
+@use './variables' as *;
+
+// width: 24px;
+// height: 23px;
+// border-color: rgba(255, 204, 116, 1);
+// border-width: 1px;
+// border-style: solid;
+
+// active base
+// width: 24px;
+// height: 23px;
+
+// border-color: rgba(255, 204, 116, 1);
+// border-width: 1px;
+// border-style: solid;
+
+.pagination{
+    @include flex-center(column, space-between, flex-start);
+    position:fixed;
+    top:50%;
+    left:0.5rem;
+    border: $deep-black 0.7px solid;
+    border-radius: 20px;
+    padding:10px;
+    transition: border 0.3s ease-in-out;
+
+    &:hover{
+        border:$amber 0.7px solid;
+        border-radius: 20px;
+    } 
+    span{
+        display:block;
+        width: 18px;
+        height: 18px;
+        border-radius:50%;
+        margin:0.25rem 0;
+        cursor: pointer;
+        position:relative;
+        p{
+            position:absolute;
+            left:35px;
+            top:-12px;
+            opacity:0;
+            font-size:0.6rem;
+            color:$red-off-white;
+            text-transform: uppercase;
+            transition: all 0.3s ease-in-out;
+        }
+        &.linked{
+            background-color: $deep-black;
+            border: $amber 0.7px solid;
+        }
+        &.active{
+            background-color: $amber;
+            border: $amber 0.7px solid;
+        }
+        &.about{
+            &:hover{
+                p{
+                    opacity:1;
+                }
+            }
+        }
+        &.projects{
+            &:hover{
+                p {
+                    opacity: 1;
+                }
+
+            }
+        }
+        &.services{
+            &:hover{
+                p {
+                    opacity: 1;
+                }
+
+            }
+        }
+        &.contact{
+            &:hover{
+                p {
+                    opacity: 1;
+                }
+
+            }
+        }
+    }
+}

@@ -389,12 +389,13 @@ $blue:#1282A2;
 
 @mixin skill-title-1(){
     font-family: "poppins";
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     font-style: normal;
     text-align: center;
     color:$blue-off-white;
     text-transform: uppercase;
+    text-align:left;
 }
 // percent
 // font-family: "poppins-regular";
@@ -410,6 +411,7 @@ $blue:#1282A2;
     font-style: normal;
     text-align: center;
     color: $amber;
+    text-align:right;
 }
 
 

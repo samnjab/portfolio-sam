@@ -4,18 +4,18 @@
     @include flex-center(column, space-between, center);
     width:fit-content;
     padding:10px;
-    border: $pink 1px solid;
+    border: $amber 1px solid;
     color:$blue-off-white;
     border-radius: 20px;
 
     i{
         transition: 0.3s ease-in-out;
         &:hover {
-            color: $pink;
+            color: $amber;
         }
         
         &:focus {
-            color: $pink;
+            color: $amber;
             // border: $amber 1px solid;
         }
 

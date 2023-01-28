@@ -33,7 +33,7 @@
                 <div class="intro">
                     <div class="text">
                         <p class="pre-header">Hi there!<span class="line"></span></p>
-                        <h1>I'm <span class="pop">Sam</span> J.</h1>
+                        <h1>i'm <span class="pop">Sam</span> J.</h1>
                         <p>A Web Developer who is endlessly curious about new tech, human behaviour and user experience. </p>
                         <button class="active-btn">Hire Me</button>
                         <button class="inactive-btn">View Work</button>
@@ -73,11 +73,17 @@
     <main>
         <section class="about">
             <div class="divider"></div>
+            <div class="pagination">
+                <span class="active about"><p>About</p></span>
+                <span class="linked projects"><p>Projects</p></span>
+                <span class="linked services"><p>Services</p></span>
+                <span class="linked contact"><p>Contact</p></span> 
+            </div>
             <div class="wrapper">
                 <div class="header">
                     <p class="pre-header">About<span class="line"></span></p>
                     <h2>About me</h2>
-                    <p> I am a graduate of Juno College of Technology(formerly HackerYou) Web Development Bootcamp with a background in neuroscience at the University of Toronto. A unique combination of technical skills and a deep understanding of the human psychology drives my endless quest to uncover what makes us tick. With a passion for technology, an obsession for turning complex problems into elegant solutions, a keen eye for design, and a drive for delivering stunning websites, I live to exceed expectations and make your online presence shine. Don't believe me? Keep scrolling! </p>
+                    <p> I am a graduate of Juno College of Technology(formerly HackerYou) Web Development Bootcamp with a background in neuroscience at the University of Toronto. A unique combination of technical skills and a deep understanding of the human psychology drives my endless quest to uncover what makes us tick. With a passion for technology, an obsession for turning complex problems into elegant solutions, a keen eye for design, and a drive for delivering stunning websites, I live to exceed expectations and make your online presence shine. But don't let me tell ya. I'll show ya. </p>
                     <button class="active-btn">Download CV</button>
                     <button class="inactive-btn">View Work</button>
                 </div>
@@ -86,6 +92,20 @@
 
         <section class="skills">
             <div class="divider"></div>
+            <div class="pagination">
+                <span class="active about">
+                    <p>About</p>
+                </span>
+                <span class="linked projects">
+                    <p>Projects</p>
+                </span>
+                <span class="linked services">
+                    <p>Services</p>
+                </span>
+                <span class="linked contact">
+                    <p>Contact</p>
+                </span>
+            </div>
             <div class="wrapper">
                 <div class="header">
                     <p class="pre-header">Expertise<span class="line"></span></p>
@@ -93,7 +113,7 @@
                 </div>
                 <div class="front-end">
                     <div class="skill">
-                        <p class="skill-title">HTML</p>
+                        <p class="skill-title">HTML + <span style="text-transform: none">LaTeX</span></p>
                         <p class="skill-percent">98%</p>
                         <span class="progress-bar html">
                             <span class="overline-bar"><span class="circle-end"></span></span>
@@ -122,67 +142,70 @@
                     </div>
                 </div>
                 <div class="backend">
-                    <div class="skill js">
-                        <svg class="skill-circle" viewBox="0 0 36 36">
-                            <path class ="circle-bg" d="M18 2.0845
-                            a 15.9155 15.9155 0 0 1 0 31.831
-                            a 15.9155 15.9155 0 0 1 0 -31.831"
-                            fill="none"
-                            stroke="#444";
-                            stroke-width="1";
-                            
-                            />
-                            <path class="circle" stroke-dasharray="95, 100" d="M18 2.0845
-                                      a 15.9155 15.9155 0 0 1 0 31.831
-                                      a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        </svg>
-                        <div class="svg-text">
-                            <p x="18" y="20.35" class="skill-title">JS</p>
-                            <p x="18" y="20.35" class="percentage">95%</p>
+                    <h2>Backend</h2>
+                    <div class="skills">
+                        <div class="skill js">
+                            <svg class="skill-circle" viewBox="0 0 36 36">
+                                <path class ="circle-bg" d="M18 2.0845
+                                a 15.9155 15.9155 0 0 1 0 31.831
+                                a 15.9155 15.9155 0 0 1 0 -31.831"
+                                fill="none"
+                                stroke="#444";
+                                stroke-width="1";
+                                
+                                />
+                                <path class="circle" stroke-dasharray="95, 100" d="M18 2.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            </svg>
+                            <div class="svg-text">
+                                <p x="18" y="20.35" class="skill-title">JS</p>
+                                <p x="18" y="20.35" class="percentage">95%</p>
+                            </div>
+                           
                         </div>
-                       
-                    </div>
-                    <div class="skill react">
-                        <svg class="skill-circle react" viewBox="0 0 36 36">
-                            <path class="circle-bg" d="M18 2.0845
-                                                        a 15.9155 15.9155 0 0 1 0 31.831
-                                                        a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#444" ; stroke-width="1" ; />
-                            <path class="circle" stroke-dasharray="90, 100" d="M18 2.0845
-                                                                  a 15.9155 15.9155 0 0 1 0 31.831
-                                                                  a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        </svg>
-                        <div class="svg-text">
-                            <p x="18" y="20.35" class="skill-title">React</p>
-                            <p x="18" y="20.35" class="percentage">90%</p>
+                        <div class="skill react">
+                            <svg class="skill-circle react" viewBox="0 0 36 36">
+                                <path class="circle-bg" d="M18 2.0845
+                                                            a 15.9155 15.9155 0 0 1 0 31.831
+                                                            a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#444" ; stroke-width="1" ; />
+                                <path class="circle" stroke-dasharray="90, 100" d="M18 2.0845
+                                                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                                                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            </svg>
+                            <div class="svg-text">
+                                <p x="18" y="20.35" class="skill-title">React</p>
+                                <p x="18" y="20.35" class="percentage">90%</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill nodejs">
-                        <svg class="skill-circle nodejs" viewBox="0 0 36 36">
-                            <path class="circle-bg" d="M18 2.0845
-                                                        a 15.9155 15.9155 0 0 1 0 31.831
-                                                        a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#444" ; stroke-width="1" ; />
-                            <path class="circle" stroke-dasharray="80, 100" d="M18 2.0845
-                                                                  a 15.9155 15.9155 0 0 1 0 31.831
-                                                                  a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        </svg>
-                        <div class="svg-text">
-                            <p x="18" y="20.35" class="skill-title">NodeJS</p>
-                            <p x="18" y="20.35" class="percentage">80%</p>
+                        <div class="skill nodejs">
+                            <svg class="skill-circle nodejs" viewBox="0 0 36 36">
+                                <path class="circle-bg" d="M18 2.0845
+                                                            a 15.9155 15.9155 0 0 1 0 31.831
+                                                            a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#444" ; stroke-width="1" ; />
+                                <path class="circle" stroke-dasharray="80, 100" d="M18 2.0845
+                                                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                                                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            </svg>
+                            <div class="svg-text">
+                                <p x="18" y="20.35" class="skill-title">NodeJS</p>
+                                <p x="18" y="20.35" class="percentage">80%</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="skill php">
-                        <svg class="skill-circle php" viewBox="0 0 36 36">
-                            <path class="circle-bg" d="M18 2.0845
-                                                        a 15.9155 15.9155 0 0 1 0 31.831
-                                                        a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#444" ; stroke-width="1" ; />
-                            <path class="circle" stroke-dasharray="10, 100" d="M18 2.0845
-                                                                  a 15.9155 15.9155 0 0 1 0 31.831
-                                                                  a 15.9155 15.9155 0 0 1 0 -31.831" />
-                        </svg>
-                        <div class="svg-text">
-                            <p x="18" y="20.35" class="skill-title">PHP</p>
-                            <p x="18" y="20.35" class="percentage">10%</p>
-                        </div>
+                        <div class="skill php">
+                            <svg class="skill-circle php" viewBox="0 0 36 36">
+                                <path class="circle-bg" d="M18 2.0845
+                                                            a 15.9155 15.9155 0 0 1 0 31.831
+                                                            a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#444" ; stroke-width="1" ; />
+                                <path class="circle" stroke-dasharray="60, 100" d="M18 2.0845
+                                                                      a 15.9155 15.9155 0 0 1 0 31.831
+                                                                      a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            </svg>
+                            <div class="svg-text">
+                                <p x="18" y="20.35" class="skill-title">Python</p>
+                                <p x="18" y="20.35" class="percentage">60%</p>
+                            </div>
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -190,6 +213,20 @@
 
         <section class="projects">
             <div class="divider"></div>
+            <div class="pagination">
+                <span class="active about">
+                    <p>About</p>
+                </span>
+                <span class="linked projects">
+                    <p>Projects</p>
+                </span>
+                <span class="linked services">
+                    <p>Services</p>
+                </span>
+                <span class="linked contact">
+                    <p>Contact</p>
+                </span>
+            </div>
             <div class="wrapper">
                 <div class="header">
                     <p class="pre-header">Project Portfolio<span class="line"></span></p>
@@ -232,7 +269,96 @@
 
                 </div>
             </div>
+        </section>
 
+        <section class="education">
+            <div class="divider"></div>
+            <div class="pagination">
+                <span class="active about">
+                    <p>About</p>
+                </span>
+                <span class="linked projects">
+                    <p>Projects</p>
+                </span>
+                <span class="linked services">
+                    <p>Services</p>
+                </span>
+                <span class="linked contact">
+                    <p>Contact</p>
+                </span>
+            </div>
+            <div class="wrapper">
+                <div class="header">
+                    <p class="pre-header">Resume<span class="line"></span></p>
+                    <h2>Experience & Education</h2>
+                </div>
+                <div class="content">
+                    <ul class="subsection left">
+                        <li class="point icon"><i class="fa-sharp fa-solid fa-graduation-cap"></i></li>
+                        <li class="point text">
+                            <p class="date">July-October 2022</p>
+                            <p class="title">NASM Certified Personal Trainer</p>
+                            <p class="description"></p>
+                            <p class="institution">National Academy of Sports Medicine</p>  
+                        </li>
+                        <li class="point icon"><i class="fa-solid fa-cube"></i></li>
+                        <li class="point text">
+                            <p class="date">June 2022</p>
+                            <p class="title">B.Sc in Neuroscience UofT</p>
+                            <p class="description"></p>
+                            <p class="institution">University of Toronto - St. George Campus</p>
+                        </li>
+                        <li class="point icon"><i class="fa-solid fa-cube"></i></li>
+                        <li class="point text">
+                            <p class="date">September 2016 - May 2017</p>
+                            <p class="title">ChemE Circuitry & Programming</p>
+                            <p class="description"></p>
+                            <p class="institution">Department of Chemical Engineering - UofT</p> 
+                        </li>
+                        <li class="point icon"><i class="fa-solid fa-cube"></i></li>
+                    </ul>
+                    <span class="line"></span>
+                    <ul class="subsection center">
+                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
+                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
+                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
+                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
+                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
+                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
+                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
+                    </ul>
+                    <ul class="subsection right">
+                        <li class="point text">
+                            <p class="date">November 2022 - February 2023</p>
+                            <p class="title">Juno Bootcamp Graduate</p>
+                            <p class="description"></p>
+                            <p class="institution">Juno College of Technology (formerly HackerYou</p>
+                        </li>
+                        <li class="point icon"><i class="fa-sharp fa-solid fa-graduation-cap"></i></li>
+                        <li class="point text">
+                            <p class="date">October 2021- November 2022</p>
+                            <p class="title">Barista</p>
+                            <p class="description"></p>
+                            <p class="institution">Starbucks - 4 King, TO</p>
+                        </li>
+                        <li class="point icon"><i class="fa-sharp fa-solid fa-graduation-cap"></i></li>
+                        <li class="point text">
+                            <p class="date">June 2016 - September 2016</p>
+                            <p class="title">DaVinci Engineering Senior Camp Councellor</p>
+                            <p class="description"></p>
+                            <p class="institution">UofT Faculty of Applied Science & Engineering</p>
+                        </li>
+                        <li class="point icon"><i class="fa-solid fa-cube"></i></li>
+                        <li class="point text">
+                            <p class="date">June-August 2017</p>
+                            <p class="title">CAMH 200,000 Campaign Fundraiser</p>
+                            <p class="description"></p>
+                            <p class="institution">Four Corners Fundraising</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
         </section>
 
     </main> 
