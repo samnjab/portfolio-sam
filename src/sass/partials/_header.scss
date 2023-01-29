@@ -1,4 +1,47 @@
 @use "variables"as *;
+.main-nav {
+    height: 10vh;
+    min-width: 70%;
+    margin: 0 5% 0 25%;
+    max-width: 700px;
+
+    // @media (max-width:768px) {
+    //     display: none;
+    // }
+    &.hide {
+        display: none;
+    }
+
+    @include flex-center(row, space-between, center);
+
+    .logo {
+        flex-basis: 10%;
+    }
+
+    .nav-bar {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+
+        .menu-btn {
+            @media (min-width:768px) {
+                display: none;
+            }
+        }
+
+        li:not(.menu-btn) {
+            @include wrap($margin:7px, $number-in-a-row:6, $min-width:fit-content, $max-width:fit-content);
+
+            @media (max-width:768px) {
+                display: none;
+            }
+        }
+
+        @media (max-width:768px) {
+            flex-direction: row-reverse;
+        }
+    }
+}
+
 header {
     background-color: $deep-black;
     padding-top: 1.5rem;
@@ -6,40 +49,6 @@ header {
     position:relative;
     @include flex-center(row, space-between, flex-start);
     flex-wrap:wrap;
-    .main-nav {
-        height:10vh;
-        min-width: 70%;
-        margin:0 5% 0 25%;
-        max-width:700px;
-        // @media (max-width:768px) {
-        //     display: none;
-        // }
-        &.hide {
-            display: none;
-        }
-        @include flex-center(row, space-between, center);
-        .logo{
-            flex-basis:10%;
-        }
-        .nav-bar {
-            flex-wrap: wrap;
-            flex-basis:100%;
-            .menu-btn{
-                @media (min-width:768px){
-                    display:none;
-                }
-            }
-            li:not(.menu-btn){
-                @include wrap($margin:7px, $number-in-a-row:6, $min-width:fit-content, $max-width:fit-content);
-                @media (max-width:768px){
-                    display:none;
-                }
-            }
-            @media (max-width:768px){
-                flex-direction: row-reverse;
-            }
-        }
-    }
     .wrapper {
         height: 90vh;
         // @include wrap($margin:auto, $number-in-a-row:2, $min-width:300px, $max-width:800px);

@@ -8,11 +8,14 @@
 html {
     font-size: 125%;
     font-family: 'Poppins', sans-serif;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 
 }
 
 body {
     line-height: 2rem;
+   
 }
 
 a {
@@ -51,4 +54,15 @@ div {
 
 .hide {
     display: none;
+}
+
+.scroll-box{
+    background-color: pink;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    height:100vh;
+    section, header{
+        height:100%;
+
+    }
 }
