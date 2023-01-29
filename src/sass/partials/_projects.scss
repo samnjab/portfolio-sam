@@ -37,8 +37,8 @@
             background-color: $red-off-white;
             z-index:1;
             .project{
-                @include wrap($margin:0px, $number-in-a-row:3, $min-width:300px, $max-width:800px);
-                height:max(calc(81vw/3), 300px);
+                @include wrap($margin:0px, $number-in-a-row:3, $min-width:100px, $max-width:800px);
+                height:max(calc(81vw/3) , 300px);
                 border:$grey 0.5px solid;
                 position:relative;
                 z-index:1;

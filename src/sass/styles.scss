@@ -2,21 +2,26 @@
 @use './partials/variables'as *;
 @use './partials/resets';
 @use './partials/typography';
+@use './font';
 @use './partials/wrapper';
+@use './partials/logo';
 @use './partials/button';
 @use './partials/pagination';
 @use './partials/divider';
 @use './partials/shapes';
 @use './partials/socials.scss';
 @use './partials/btn-burger';
-@use './partials/header';
+@use './partials/toggle-switch';
 @use './partials/nav-bar';
+@use './partials/header';
 @use './partials/sections';
 @use './partials/circle-pie';
 @use './partials/skills';
 @use './partials/projects';
 @use './partials/education';
+@use './partials/contact';
 @use './partials/form';
 @use './partials/media-queries';
+
 
 

@@ -6,7 +6,6 @@
 }
 
 html {
-    color: $text-color;
     font-size: 125%;
     font-family: 'Poppins', sans-serif;
 
@@ -42,7 +41,7 @@ section {
     padding: 1rem 0;
 }
 
-.img-box {
+div {
     img {
         max-width: 100%;
         height:auto;

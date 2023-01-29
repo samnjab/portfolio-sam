@@ -13,6 +13,16 @@ button {
         &:focus {
             opacity: 1;
         }
+       
+    }
+    @media(max-width:768px) {
+        font-size: 14px;
+        font-weight: 100;
+        width: 140px;
+        min-width: fit-content;
+        height: 43px;
+        min-height: fit-content;
+        margin: 1rem 0px 1rem 10px;
     }
     &.active-btn{
         @include active-btn-styler;

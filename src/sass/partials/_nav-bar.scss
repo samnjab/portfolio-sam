@@ -1,17 +1,10 @@
 @use '../partials/variables'as *;
 
-// Menu Nav: 
-// font-family: "poppins-medium";
-// font-size: 18px;
-// font-weight: 500;
-// font-style: normal;
-// text-align: right;
-// color: #FFCC74;
 .nav-bar {
     @include nav-styler();
     width: 100%;
     @include flex-center(row, space-between, baseline);
-    li {
+    li:not(.menu-btn){
         flex-basis: 25%;
     }
     .active {
@@ -25,6 +18,4 @@
         }
     }
 }
-.side-nav{
-    background-color: $amber;
-}
+

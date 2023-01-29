@@ -1,0 +1,27 @@
+@use './variables' as *;
+.contact{
+    .wrapper{
+        @include flex-center(row, space-around, flex-start);
+        flex-wrap:wrap;
+        fieldset{
+            @include wrap($margin:5px, $number-in-a-row:2, $min-width:300px, $max-width:600px);
+            flex-grow:2;
+            flex-shrink:1;
+            margin:0.5rem;
+        }
+        .header{
+            @include wrap($margin:5px, $number-in-a-row:3, $min-width:300px, $max-width:600px);
+            @include flex-center(column, space-between, flex-start);
+            flex-grow:1;
+            flex-shrink:2;
+            margin:0.5rem;
+            .socials{
+                @include flex-center(row, space-between, center);
+                align-self:center;
+                width:200px;
+                margin-top:1rem;
+            }
+        }
+
+    }
+}

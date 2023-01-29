@@ -1,44 +1,41 @@
 @use './variables'as *;
 
 fieldset {
-    margin: 1rem 0;
-
+    padding:0;
     form {
-        border: none;
-        @include flex-center();
-        flex-wrap: wrap;
-
+        border: $amber solid 1px;
+        border-radius:5px;
+        background-color: $deep-black;
+        padding:1rem;
+        @include flex-center(column, space-around, center);
         input {
-            
+            background-color: $deep-black;
+            color:$red-off-white;
+            border-bottom: $red-off-white 1px solid;
             margin: 10px 5px 10px 5px;
             padding: 0.5rem;
-            border-radius: 20px;
-            font-size: 16px;
-            width: 300px;
-            border-radius: 20px;
-            font-size: 16px;
-            width: 300px;
-
+            font-size: 14px;
+            width: 100%;
             &::placeholder {
-                font-size: 16px;
-                text-align: center;
-
+                color:$red-off-white;
+                font-size: 14px;
+                line-height: 30px;
+                
             }
-
         }
-
         textarea {
-        
-            border: $white 2px solid;
-            padding: 1rem;
-            margin: 5px;
-            @include wrap($margin:5px, $number-in-a-row:1, $min-width:10px, $max-width:790px);
+            border-bottom: $red-off-white 1px solid;
+            background-color: $deep-black;
+            color:$red-off-white;
             margin: 10px 5px 10px 5px;
-
+            padding: 0.5rem;
+            font-size: 14px;
+            width: 100%;
+            @include wrap($margin:5px, $number-in-a-row:1, $min-width:10px, $max-width:790px);
             &::placeholder {
-             
-                font-size: 20px;
-                line-height: 32px;
+                color:$red-off-white;
+                font-size: 14px;
+                line-height: 30px;
             }
         }
 

@@ -16,59 +16,78 @@
 </head>
 <body> 
     <header class="header">
+        <nav class="main-nav">
+            <!-- <div class="menu-btn closed">
+                <div class="menu-btn__burger"></div>
+            </div> -->
+            <!-- <div class="logo">
+                <h3>
+                    <span class="sj">SJ</span>CREATIV<span class="eon">AIØN</span>
+                </h3>
+            </div> -->
+            <ul class="nav-bar">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li class="linked"><a href="./pages/about.html">About</a></li>
+                <li class="linked"><a href="#">Projects</a></li>
+                <li class="linked"><a href="#">Service</a></li>
+                <li class="linked"><a href="./pages/contact.html">Contact</a></li>
+                <li class="menu-btn closed">
+                    <div class="menu-btn__burger"></div>
+                </li>
+ 
+            </ul>
+        </nav>
         <div class="wrapper">
-            <div class="main">
-                <nav class="main-nav">
+            <div class="intro">
+                <div class="text">
+                    <p class="pre-header">Hi there!<span class="line"></span></p>
+                    <h1>I'm <span class="pop">Sam</span> J.</h1>
+                    <p>A Web Developer who is endlessly curious about new tech, human behaviour and user experience. </p>
+                    <button class="active-btn">Hire Me</button>
+                    <button class="inactive-btn">View Work</button>
+                </div>
+                <div class="img-box"><img src="" alt=""></div>
+                <!-- <div class="shapes">
+                    <div class="triangle-1"></div>
+                    <div class="circle"></div>
+                    <div class="rectangle"></div>
+                    <div class="triangle-2"></div>
+                </div> -->
+            </div>
+        </div>
+        <nav class="side-nav">
+            <ul class="nav-bar">
+                <li class="navigation">
                     <!-- <div class="menu-btn closed">
                         <div class="menu-btn__burger"></div>
-                    </div> -->
-                    <ul class="nav-bar">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li class="linked"><a href="./pages/about.html">About</a></li>
-                        <li class="linked"><a href="#">Projects</a></li>
-                        <li class="linked"><a href="#">Service</a></li>
-                        <li class="linked"><a href="./pages/contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="intro">
-                    <div class="text">
-                        <p class="pre-header">Hi there!<span class="line"></span></p>
-                        <h1>i'm <span class="pop">Sam</span> J.</h1>
-                        <p>A Web Developer who is endlessly curious about new tech, human behaviour and user experience. </p>
-                        <button class="active-btn">Hire Me</button>
-                        <button class="inactive-btn">View Work</button>
                     </div>
-                    <div class="img-box"><img src="" alt=""></div>
-                    <!-- <div class="shapes">
-                        <div class="triangle-1"></div>
-                        <div class="circle"></div>
-                        <div class="rectangle"></div>
-                        <div class="triangle-2"></div>
-                    </div> -->
-                </div>
+                    <i class="fa-solid fa-telescope"></i> -->
+                    <div class="active"><a href="">Home</a></div>
+                    <div class="linked"><a href="">About</a></div>
+                    <div class="linked"><a href="">Projects</a></div>
+                    <div class="linked"><a href="">Services</a></div>
+                    <div class="linked"><a href="">Contact</a></div>
+                </li>
+                <!-- <li class="quick-buttons">
+                    <button class="active-btn">Hire Me</button>
+                    <button class="inactive-btn">View Work</button>
+                </li> -->
+                <li class="socials">
+                    <i class="fa-brands fa-github"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-medium"></i>
+                </li>
+            </ul>
+        </nav> 
+        <div class="light-dark-btn">
+            <div class='toggle-switch'>
+                <label>
+                    <input type='checkbox'>
+                    <span class='slider'></span>
+                </label>
             </div>
-            <nav class="side-nav">
-                <ul class="nav-bar">
-                    <li class="navigation">
-                        <div class="menu-btn closed">
-                            <div class="menu-btn__burger"></div>
-                        </div>
-                        <i class="fa-solid fa-telescope"></i>
-                    </li>
-                    <li class="quick-buttons">
-                        <button class="active-btn">Hire Me</button>
-                        <button class="inactive-btn">View Work</button>
-                    </li>
-                    <li class="socials">
-                        <i class="fa-brands fa-github"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-medium"></i>
-                    </li>
-                </ul>
-            </nav> 
         </div>
-       
     </header> 
     <main>
         <section class="about">
@@ -358,6 +377,49 @@
 
                     </ul>
                 </div>
+                <button class="inactive-btn">Download CV</button>
+            </div>
+        </section>
+        <section class="contact">
+            <div class="divider"></div>
+            <div class="pagination">
+                <span class="active about">
+                    <p>About</p>
+                </span>
+                <span class="linked projects">
+                    <p>Projects</p>
+                </span>
+                <span class="linked services">
+                    <p>Services</p>
+                </span>
+                <span class="linked contact">
+                    <p>Contact</p>
+                </span>
+            </div>
+            <div class="wrapper">
+                <fieldset>
+                    <form action="submit" class="contact-form">
+                        <label for="name" class="sr-only">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                        <label for="email" class="sr-only">Your Email</label>
+                        <input type="text" id="email" placeholder="Your Email" name="email">
+                        <label for="message" class="sr-only">Your Message</label>
+                        <textarea type="text" id="message" placeholder="Your Message" name="message" rows="8"></textarea>
+                        <button class="active-btn">Inquire</button>
+                    </form>
+                </fieldset>
+                <div class="header">
+                    <p class="pre-header">contact<span class="line"></span></p>
+                    <h2>Let's connect!</h2>
+                    <p class="intro-text">Ready to work together on a design project? Want me on your team, or just want to say hello, how are ya? Fill out the form.</p>
+                    <div class="socials">
+                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-medium"></i>
+                    </div>
+                </div>
+                
             </div>
         </section>
 
