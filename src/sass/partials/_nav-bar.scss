@@ -4,9 +4,6 @@
     @include nav-styler();
     width: 100%;
     @include flex-center(row, space-between, baseline);
-    li:not(.menu-btn){
-        flex-basis: 25%;
-    }
     .active {
         border-bottom: $amber 5px solid;
     }

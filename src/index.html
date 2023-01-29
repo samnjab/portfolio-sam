@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../public/css/styles.css">
 </head>
 <body> 
-    <header class="header">
+    <header class="header" id="#home">
         <nav class="main-nav">
             <!-- <div class="menu-btn closed">
                 <div class="menu-btn__burger"></div>
@@ -29,7 +29,7 @@
                 <li class="active"><a href="index.html">Home</a></li>
                 <li class="linked"><a href="./pages/about.html">About</a></li>
                 <li class="linked"><a href="#">Projects</a></li>
-                <li class="linked"><a href="#">Service</a></li>
+                <li class="linked"><a href="#">Services</a></li>
                 <li class="linked"><a href="./pages/contact.html">Contact</a></li>
                 <li class="menu-btn closed">
                     <div class="menu-btn__burger"></div>
@@ -46,7 +46,7 @@
                     <button class="active-btn">Hire Me</button>
                     <button class="inactive-btn">View Work</button>
                 </div>
-                <div class="img-box"><img src="" alt=""></div>
+                <!-- <div class="img-box"><img src="" alt=""></div> -->
                 <!-- <div class="shapes">
                     <div class="triangle-1"></div>
                     <div class="circle"></div>
@@ -62,16 +62,41 @@
                         <div class="menu-btn__burger"></div>
                     </div>
                     <i class="fa-solid fa-telescope"></i> -->
-                    <div class="active"><a href="">Home</a></div>
+                    <!-- <div class="active"><a href="">Home</a></div>
                     <div class="linked"><a href="">About</a></div>
                     <div class="linked"><a href="">Projects</a></div>
                     <div class="linked"><a href="">Services</a></div>
-                    <div class="linked"><a href="">Contact</a></div>
+                    <div class="linked"><a href="">Contact</a></div> -->
+                    <div class="pagination">
+                        <a class="active home" href="#home">
+                            <p>Home</p>
+                        </a>
+                        <a class="linked about" href="#about">
+                            <p>About</p>
+                        </a>
+                        <a class="linked projects" href="#projects">
+                            <p>Projects</p>
+                        </a>
+                        <a class="linked services" href="#services"> 
+                            <p>Services</p>
+                        </a>
+                        <a class="linked contact" href="#contact">
+                            <p>Contact</p>
+                        </a>
+                    </div>
                 </li>
                 <!-- <li class="quick-buttons">
                     <button class="active-btn">Hire Me</button>
                     <button class="inactive-btn">View Work</button>
                 </li> -->
+                <div class="light-dark-btn">
+                    <div class='toggle-switch'>
+                        <label>
+                            <input type='checkbox'>
+                            <span class='slider'></span>
+                        </label>
+                    </div>
+                </div>
                 <li class="socials">
                     <i class="fa-brands fa-github"></i>
                     <i class="fa-brands fa-linkedin"></i>
@@ -88,15 +113,32 @@
                 </label>
             </div>
         </div>
+        <ul class="socials">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-medium"></i>
+        </ul>
     </header> 
     <main>
-        <section class="about">
+        <section class="about" id="#about">
             <div class="divider"></div>
             <div class="pagination">
-                <span class="active about"><p>About</p></span>
-                <span class="linked projects"><p>Projects</p></span>
-                <span class="linked services"><p>Services</p></span>
-                <span class="linked contact"><p>Contact</p></span> 
+                <a class="linked home" href="#home">
+                    <p>Home</p>
+                </a>
+                <a class="active about" href="#about">
+                    <p>About</p>
+                </a>
+                <a class="linked projects" href="#projects">
+                    <p>Projects</p>
+                </a>
+                <a class="linked services" href="#services">
+                    <p>Services</p>
+                </a>
+                <a class="linked contact" href="#contact">
+                    <p>Contact</p>
+                </a>
             </div>
             <div class="wrapper">
                 <div class="header">
@@ -109,21 +151,24 @@
             </div>
         </section>
 
-        <section class="skills">
+        <section class="skills" id="#skills">
             <div class="divider"></div>
             <div class="pagination">
-                <span class="active about">
+                <a class="linked home" href="#home">
+                    <p>Home</p>
+                </a>
+                <a class="active about" href="#about">
                     <p>About</p>
-                </span>
-                <span class="linked projects">
+                </a>
+                <a class="linked projects" href="#projects">
                     <p>Projects</p>
-                </span>
-                <span class="linked services">
+                </a>
+                <a class="linked services" href="#services">
                     <p>Services</p>
-                </span>
-                <span class="linked contact">
+                </a>
+                <a class="linked contact" href="#contact">
                     <p>Contact</p>
-                </span>
+                </a>
             </div>
             <div class="wrapper">
                 <div class="header">
@@ -229,22 +274,118 @@
                 </div>
             </div>
         </section>
-
-        <section class="projects">
+        <section class="education" id="#education">
             <div class="divider"></div>
             <div class="pagination">
-                <span class="active about">
+                <a class="linked home" href="#home">
+                    <p>Home</p>
+                </a>
+                <a class="active about" href="#about">
                     <p>About</p>
-                </span>
-                <span class="linked projects">
+                </a>
+                <a class="linked projects" href="#projects">
                     <p>Projects</p>
-                </span>
-                <span class="linked services">
+                </a>
+                <a class="linked services" href="#services">
                     <p>Services</p>
-                </span>
-                <span class="linked contact">
+                </a>
+                <a class="linked contact" href="#contact">
                     <p>Contact</p>
-                </span>
+                </a>
+            </div>
+            <div class="wrapper">
+                <div class="header">
+                    <p class="pre-header">Resume<span class="line"></span></p>
+                    <h2>Experience & Education</h2>
+                </div>
+                <div class="content">
+                    <ul class="subsection left">
+                        <li class="point icon"><i class="fa-sharp fa-solid fa-graduation-cap"></i></li>
+                        <li class="point text">
+                            <p class="date">July-October 2022</p>
+                            <p class="title">NASM Certified Personal Trainer</p>
+                            <p class="description"></p>
+                            <p class="institution">National Academy of Sports Medicine</p>
+                        </li>
+                        <li class="point icon"><i class="fa-solid fa-cube"></i></li>
+                        <li class="point text">
+                            <p class="date">June 2022</p>
+                            <p class="title">B.Sc in Neuroscience UofT</p>
+                            <p class="description"></p>
+                            <p class="institution">University of Toronto - St. George Campus</p>
+                        </li>
+                        <li class="point icon"><i class="fa-solid fa-cube"></i></li>
+                        <li class="point text">
+                            <p class="date">September 2016 - May 2017</p>
+                            <p class="title">ChemE Circuitry & Programming</p>
+                            <p class="description"></p>
+                            <p class="institution">Department of Chemical Engineering - UofT</p>
+                        </li>
+                        <li class="point icon"><i class="fa-solid fa-cube"></i></li>
+                    </ul>
+                    <span class="line"></span>
+                    <ul class="subsection center">
+                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
+                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
+                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
+                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
+                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
+                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
+                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
+                    </ul>
+                    <ul class="subsection right">
+                        <li class="point text">
+                            <p class="date">November 2022 - February 2023</p>
+                            <p class="title">Juno Bootcamp Graduate</p>
+                            <p class="description"></p>
+                            <p class="institution">Juno College of Technology (formerly HackerYou</p>
+                        </li>
+                        <li class="point icon"><i class="fa-sharp fa-solid fa-graduation-cap"></i></li>
+                        <li class="point text">
+                            <p class="date">October 2021- November 2022</p>
+                            <p class="title">Barista</p>
+                            <p class="description"></p>
+                            <p class="institution">Starbucks - 4 King, TO</p>
+                        </li>
+                        <li class="point icon"><i class="fa-sharp fa-solid fa-graduation-cap"></i></li>
+                        <li class="point text">
+                            <p class="date">June 2016 - September 2016</p>
+                            <p class="title">DaVinci Engineering Senior Camp Councellor</p>
+                            <p class="description"></p>
+                            <p class="institution">UofT Faculty of Applied Science & Engineering</p>
+                        </li>
+                        <li class="point icon"><i class="fa-solid fa-cube"></i></li>
+                        <li class="point text">
+                            <p class="date">June-August 2017</p>
+                            <p class="title">CAMH 200,000 Campaign Fundraiser</p>
+                            <p class="description"></p>
+                            <p class="institution">Four Corners Fundraising</p>
+                        </li>
+        
+                    </ul>
+                </div>
+                <button class="inactive-btn">Download CV</button>
+            </div>
+        </section>
+
+        <section class="projects" id="#projects">
+            <div class="divider"></div>
+            <div class="pagination">
+                <a class="linked home" href="#home">
+                    <p>Home</p>
+                </a>
+                <a class="linked about" href="#about">
+                    <p>About</p>
+                </a>
+                <a class="active projects" href="#projects">
+                    <p>Projects</p>
+                </a>
+                <a class="linked services" href="#services">
+                    <p>Services</p>
+                </a>
+                <a class="linked contact" href="#contact">
+                    <p>Contact</p>
+                </a>
             </div>
             <div class="wrapper">
                 <div class="header">
@@ -290,111 +431,25 @@
             </div>
         </section>
 
-        <section class="education">
+       
+        <section class="contact" id="contact">
             <div class="divider"></div>
             <div class="pagination">
-                <span class="active about">
+                <a class="linked home" href="#home">
+                    <p>Home</p>
+                </a>
+                <a class="linked about" href="#about">
                     <p>About</p>
-                </span>
-                <span class="linked projects">
+                </a>
+                <a class="linked projects" href="#projects">
                     <p>Projects</p>
-                </span>
-                <span class="linked services">
+                </a>
+                <a class="linked services" href="#services">
                     <p>Services</p>
-                </span>
-                <span class="linked contact">
+                </a>
+                <a class="active contact" href="#contact">
                     <p>Contact</p>
-                </span>
-            </div>
-            <div class="wrapper">
-                <div class="header">
-                    <p class="pre-header">Resume<span class="line"></span></p>
-                    <h2>Experience & Education</h2>
-                </div>
-                <div class="content">
-                    <ul class="subsection left">
-                        <li class="point icon"><i class="fa-sharp fa-solid fa-graduation-cap"></i></li>
-                        <li class="point text">
-                            <p class="date">July-October 2022</p>
-                            <p class="title">NASM Certified Personal Trainer</p>
-                            <p class="description"></p>
-                            <p class="institution">National Academy of Sports Medicine</p>  
-                        </li>
-                        <li class="point icon"><i class="fa-solid fa-cube"></i></li>
-                        <li class="point text">
-                            <p class="date">June 2022</p>
-                            <p class="title">B.Sc in Neuroscience UofT</p>
-                            <p class="description"></p>
-                            <p class="institution">University of Toronto - St. George Campus</p>
-                        </li>
-                        <li class="point icon"><i class="fa-solid fa-cube"></i></li>
-                        <li class="point text">
-                            <p class="date">September 2016 - May 2017</p>
-                            <p class="title">ChemE Circuitry & Programming</p>
-                            <p class="description"></p>
-                            <p class="institution">Department of Chemical Engineering - UofT</p> 
-                        </li>
-                        <li class="point icon"><i class="fa-solid fa-cube"></i></li>
-                    </ul>
-                    <span class="line"></span>
-                    <ul class="subsection center">
-                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
-                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
-                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
-                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
-                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
-                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
-                        <li class="point"><span class="outer"><span class="inner"></span></span></li>
-                    </ul>
-                    <ul class="subsection right">
-                        <li class="point text">
-                            <p class="date">November 2022 - February 2023</p>
-                            <p class="title">Juno Bootcamp Graduate</p>
-                            <p class="description"></p>
-                            <p class="institution">Juno College of Technology (formerly HackerYou</p>
-                        </li>
-                        <li class="point icon"><i class="fa-sharp fa-solid fa-graduation-cap"></i></li>
-                        <li class="point text">
-                            <p class="date">October 2021- November 2022</p>
-                            <p class="title">Barista</p>
-                            <p class="description"></p>
-                            <p class="institution">Starbucks - 4 King, TO</p>
-                        </li>
-                        <li class="point icon"><i class="fa-sharp fa-solid fa-graduation-cap"></i></li>
-                        <li class="point text">
-                            <p class="date">June 2016 - September 2016</p>
-                            <p class="title">DaVinci Engineering Senior Camp Councellor</p>
-                            <p class="description"></p>
-                            <p class="institution">UofT Faculty of Applied Science & Engineering</p>
-                        </li>
-                        <li class="point icon"><i class="fa-solid fa-cube"></i></li>
-                        <li class="point text">
-                            <p class="date">June-August 2017</p>
-                            <p class="title">CAMH 200,000 Campaign Fundraiser</p>
-                            <p class="description"></p>
-                            <p class="institution">Four Corners Fundraising</p>
-                        </li>
-
-                    </ul>
-                </div>
-                <button class="inactive-btn">Download CV</button>
-            </div>
-        </section>
-        <section class="contact">
-            <div class="divider"></div>
-            <div class="pagination">
-                <span class="active about">
-                    <p>About</p>
-                </span>
-                <span class="linked projects">
-                    <p>Projects</p>
-                </span>
-                <span class="linked services">
-                    <p>Services</p>
-                </span>
-                <span class="linked contact">
-                    <p>Contact</p>
-                </span>
+                </a>
             </div>
             <div class="wrapper">
                 <fieldset>

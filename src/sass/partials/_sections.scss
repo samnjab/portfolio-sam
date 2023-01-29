@@ -3,4 +3,9 @@
 section{
     background-color: $deep-black;
     position:relative;
+    .pagination{
+        position:absolute;
+        top:50%;
+        left:0.5rem;
+    }
 }
