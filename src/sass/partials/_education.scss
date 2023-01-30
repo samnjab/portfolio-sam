@@ -7,6 +7,9 @@
     i{
         font-size:3rem;
         color:$blue-off-white;
+        @media(max-width:$mobile) {
+            font-size: 2rem;
+        }
     }
 }
 
@@ -34,6 +37,11 @@
             height:151px;
             @include flex-center(column, center, center);
         }
+        @media(max-width:$mobile) {
+           flex-basis:50%;
+        
+        }
+        
     }
     .right {
         flex-basis: 48%;
@@ -44,11 +52,19 @@
             height: 151px;
             @include flex-center(column, center, center);
         }
+        @media(max-width:$mobile) {
+            flex-basis: 50%;
+        
+        }
     }
     .center{
         width:4px;
         height:1115px;
         margin:0 50px;
+        @media(max-width:$mobile) {
+           margin:0 10px;
+        
+        }
         @include flex-center(column, space-between, center);
         .point {
             height: 151px;
@@ -65,6 +81,10 @@
            position:relative;
            z-index:2;
            background-color: $deep-black;
+            @media(max-width:$mobile) {
+                width:20px;
+                height:20px;
+            }
        }
         .inner {
             display:block;
@@ -77,6 +97,13 @@
             left:4px;
             top:4px;
             z-index:3;
+            @media(max-width:$mobile) {
+                width: 15px;
+                height: 15px;
+                left:2px;
+                top:2px;
+
+            }
         }
     }
 }
@@ -90,6 +117,9 @@
     line-height: 1.2rem;
     display:inline-block;
     width:100%;
+    @media(max-width:$mobile) {
+        font-size: 12px;
+    }
 }
 
 .description{
@@ -102,6 +132,9 @@
     line-height: 1.2rem;
     display:inline-block;
     width:100%;
+    @media(max-width:$mobile) {
+        font-size: 12px;
+    }
 }
 .title{
     font-family: "poppins";
@@ -113,6 +146,9 @@
     line-height: 1.2rem;
     display:inline-block;
     width:100%;
+    @media(max-width:$mobile) {
+        font-size: 16px;
+    }
 }
 .institution{
     font-family: "poppins";
@@ -124,7 +160,11 @@
     line-height: 1.2rem;
     display:inline-block;
     width:100%;
+    @media(max-width:$mobile) {
+        font-size: 164x;
+    }
 }
+
         
 
 

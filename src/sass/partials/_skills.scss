@@ -9,6 +9,9 @@
         }
         .front-end{
             @include wrap($margin:20px, $number-in-a-row:2, $min-width:350px, $max-width:400px);
+            @media (max-width:$mobile){
+                min-width:200px;
+            }
             @include flex-center(column, space-between, flex-start);
             margin: 1rem 40px 1rem 0px;
             .skill{
@@ -17,12 +20,22 @@
         }
         .backend{
             @include wrap($margin:10px, $number-in-a-row:2, $min-width:320px, $max-width:400px);
+            @media (max-width:$mobile) {
+                min-width: 200px;
+            }
             @include flex-center(row, space-around, space-around);
             margin: 1rem 0 1rem 20px;
+            @media (max-width:$mobile) {
+               margin:1rem 10px 10px 20px;
+            }
             // flex-wrap: wrap;
             .skill{
                 width:147px;
                 height:147px;
+                @media (max-width:$mobile){
+                    width:100px;
+                    height:100px
+                }
                 flex-grow:0;
                 margin:1rem 0;
                 // @include wrap($margin:5px, $number-in-a-row:2, $min-width:147px, $max-width:800px);
@@ -128,6 +141,9 @@
 
 .backend{
     @include flex-center(row, space-around, center);
+    @media(max-width:$mobile) {
+        justify-content: center;
+    }
     position:relative;
     h2 {
         opacity: 0.15;
@@ -189,20 +205,36 @@
         position:absolute;
         top:-2%;
         left:37%;
+        @media(max-width:$mobile) {
+            top:-4%;
+            left:35%;
+        }
     }
     .nodejs{
         .svg-text{
             left:40px;
+            @media(max-width:$mobile) {
+                top: -4%;
+                left: 20%;
+            }
         }
     }
     .react{
         .svg-text{
             left:45px;
+            @media(max-width:$mobile) {
+                top: -4%;
+                left: 25%;
+            }
         }
     }
     .php{
         .svg-text {
             left: 38px;
+            @media(max-width:$mobile) {
+                top: -4%;
+                left: 18%;
+            }
         }
     }
 }

@@ -62,6 +62,9 @@ $blue:#1282A2;
     font-weight: 400;
     font-style: normal;
     color:$grey;
+    @media(max-width:$mobile){
+        font-size:16px;
+    }
 }
 @mixin accent-line-styler {
     display: inline-block;
@@ -96,6 +99,9 @@ $blue:#1282A2;
     font-weight: 400;
     font-style: normal;
     color:$grey;
+    @media(max-width:$mobile) {
+        font-size: 14px;
+    }
 }
 @mixin percent-progress-2() {
     font-family: "lato";
@@ -105,6 +111,9 @@ $blue:#1282A2;
     text-align: center;
     color:$amber;
     display:block;
+    @media(max-width:$mobile) {
+        font-size: 16px;
+    }
 }
 @mixin skill-title-2(){
     font-family: "lato";
@@ -115,6 +124,9 @@ $blue:#1282A2;
     color:$red-off-white;
     text-transform: uppercase;
     displau:block;
+    @media(max-width:$mobile) {
+        font-size: 16px;
+    }
 }
 @mixin progress-bar(){
     display:block;
@@ -144,6 +156,9 @@ $blue:#1282A2;
     color:$blue-off-white;
     text-transform: uppercase;
     text-align:left;
+    @media(max-width:$mobile) {
+        font-size: 16px;
+    }
 }
 @mixin percent-progress-1(){
     font-family: "poppins";
@@ -153,6 +168,9 @@ $blue:#1282A2;
     text-align: center;
     color: $amber;
     text-align:right;
+    @media(max-width:$mobile) {
+        font-size: 16px;
+    }
 }
 @mixin flex-center($direction:row, $main-axis:flex-start, $cross-axis:flex-start) {
     display: flex;

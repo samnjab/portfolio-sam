@@ -1,7 +1,8 @@
 @use './variables' as *;
 .contact{
     .wrapper{
-        @include flex-center(row, space-around, flex-start);
+        min-height:100vh;
+        @include flex-center(row, space-around, center);
         flex-wrap:wrap;
         fieldset{
             @include wrap($margin:5px, $number-in-a-row:2, $min-width:300px, $max-width:600px);
