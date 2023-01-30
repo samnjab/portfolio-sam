@@ -25,25 +25,51 @@ document.querySelectorAll('.contact-nav').forEach(link => {
     })
 })
 
-const scrollEvent = () => {
-  const main = document.querySelector('.scroll-container');
-  const section1 = document.querySelector('#projects');
-  const section2 = document.querySelector('#contact');
-  console.log(section1, section2)
 
-  if (main.scrollTop > 50) {
-    section1.style.backgroundColor = "red";
-
-  } else {
-    section1.style.backgroundColor = "pink";
-  }
-
-  if (main.scrollTop > window.innerHeight / 2) {
-    section2.style.backgroundColor = "blue";
-  } else {
-    section2.style.backgroundColor = "purple";
-  }
+const elementInView = (element, percentageScroll = 100) => {
+    const elementTop = element.getBoundingClientRect().top;
+    return (
+        elementTop <= 
+        ((window.innerHeight || document.documentElement.clientHeight) * (percentageScroll/100))
+    );
+};
+const elementFade = (element, percentageScroll = 100) => {
+    const elementBottom = element.getBoundingClientRect().bottom;
+    return (
+        elementBottom <= 
+        ((window.innerHeight || document.documentElement.clientHeight) * (percentageScroll/100))
+    );
 }
 
-window.addEventListener('scroll', scrollEvent);
+const displayScrollElement = (element) => {
+    element.classList.add("scrolled");
+};
+const hideScrollElement = (element) => {
+    element.classList.remove("scrolled");
+    
+};
+
+const handleScrollAnimation = () => {
+    const scrollAreas = document.querySelectorAll('.scroll-area')
+    scrollAreas.forEach((element) => {
+      if (elementInView(element, 50)) {
+        displayScrollElement(element);
+        if (elementFade(element, 50)){
+            hideScrollElement(element)
+        }
+      }
+      else{
+          hideScrollElement(element);
+      }
+    })
+}
+
+document.querySelector('.scroll-container').addEventListener('scroll', ()=>{
+    handleScrollAnimation();
+})
+
+// window.addEventListener('scroll', () => {
+   
+// })
+
 
