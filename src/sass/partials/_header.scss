@@ -125,7 +125,7 @@ header {
                 margin:1rem 0;
                 .pagination{
                     align-items: flex-end;
-                    a{
+                    span{
                         position:relative;
                         border: $amber 0.7px solid;
                         p{
@@ -137,16 +137,6 @@ header {
                             text-align:right;
                         }
                     }
-                }
-    
-                .linked{
-                    border-bottom:none;
-                    border-left:3px $deep-black solid; 
-                }
-                .active{
-                    border-bottom:none;
-                    border-left:3px $amber solid;
-    
                 }
             }
             .quick-buttons {
