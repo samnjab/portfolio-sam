@@ -2,8 +2,10 @@
 header {
     background-color: $deep-black;
     padding-top: 1.5rem;
-    padding-bottom:1.5rem;
-    height:100vh;
+    padding-bottom:2.5rem;
+    @media (min-width:$tablet){
+        height:100vh;
+    }
     position:relative;
     @include flex-center(row, space-between, flex-start);
     flex-wrap:wrap;
@@ -42,7 +44,7 @@ header {
         }
     }
     .wrapper {
-        height: 90vh;
+        min-height:fit-content;
         flex-basis:calc(90% - 100px);
         margin:auto;
         min-width:300px;
@@ -120,6 +122,7 @@ header {
             @include flex-center(column, space-between, center);
             .navigation {
                 flex-basis: 30%;
+                margin:1rem 0;
                 .pagination{
                     align-items: flex-end;
                     a{
@@ -162,7 +165,7 @@ header {
             }
             .light-dark-btn {
                 flex-basis: 20%;
-                margin-right:0;
+                margin:1rem 0;
                 position:inherit;
                 @media(max-width: $tablet){
                     display:block;
@@ -172,7 +175,7 @@ header {
             .socials {
                 width:44.5px;
                 height:175px;
-                margin-right:0;
+                margin:1rem 0;
                 position:inherit;
                 @media(max-width:$tablet){
                     display:flex;

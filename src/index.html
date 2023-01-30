@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="../public/css/styles.css">
 </head>
 <body> 
-    <header class="header" id="#home">
+    <header class="header" id="home">
         <nav class="main-nav">
             <!-- <div class="menu-btn closed">
                 <div class="menu-btn__burger"></div>
@@ -26,11 +26,11 @@
                 </h3>
             </div> -->
             <ul class="nav-bar">
-                <li class="active"><a href="index.html">Home</a></li>
-                <li class="linked"><a href="./pages/about.html">About</a></li>
-                <li class="linked"><a href="#">Projects</a></li>
-                <li class="linked"><a href="#">Services</a></li>
-                <li class="linked"><a href="./pages/contact.html">Contact</a></li>
+                <li class="active home-nav">Home</li>
+                <li class="linked about-nav" >About</li>
+                <li class="linked projects-nav">Projects</li>
+                <li class="linked services-nav">Services</li>
+                <li class="linked contact-nav">Contact</li>
                 <li class="menu-btn closed">
                     <div class="menu-btn__burger"></div>
                 </li>
@@ -43,8 +43,8 @@
                     <p class="pre-header">Hi there!<span class="line"></span></p>
                     <h1>I'm <span class="pop">Sam</span> J.</h1>
                     <p>A Web Developer who is endlessly curious about new tech, human behaviour and user experience. </p>
-                    <button class="active-btn">Hire Me</button>
-                    <button class="inactive-btn">View Work</button>
+                    <a href="#contact"><button class="active-btn">Hire Me</button></a>
+                    <a href="#projects"><button class="inactive-btn">View Work</button></a>
                 </div>
                 <!-- <div class="img-box"><img src="" alt=""></div> -->
                 <!-- <div class="shapes">
@@ -68,21 +68,21 @@
                     <div class="linked"><a href="">Services</a></div>
                     <div class="linked"><a href="">Contact</a></div> -->
                     <div class="pagination">
-                        <a class="active home" href="#home">
+                        <span class="active home-nav" href="#home">
                             <p>Home</p>
-                        </a>
-                        <a class="linked about" href="#about">
+                        </span>
+                        <span class="linked about-nav" href="#about">
                             <p>About</p>
-                        </a>
-                        <a class="linked projects" href="#projects">
+                        </span>
+                        <span class="linked projects-nav" href="#projects">
                             <p>Projects</p>
-                        </a>
-                        <a class="linked services" href="#services"> 
+                        </span>
+                        <span class="linked services-nav" href="#services"> 
                             <p>Services</p>
-                        </a>
-                        <a class="linked contact" href="#contact">
+                        </span>
+                        <span class="linked contact-nav" href="#contact">
                             <p>Contact</p>
-                        </a>
+                        </span>
                     </div>
                 </li>
                 <!-- <li class="quick-buttons">
@@ -98,10 +98,10 @@
                     </div>
                 </div>
                 <li class="socials">
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-medium"></i>
+                    <a href="https://github.com/samnjab?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sam-jaberi-310b92257" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-medium"></i></a>
                 </li>
             </ul>
         </nav> 
@@ -114,31 +114,31 @@
             </div>
         </div>
         <ul class="socials">
-            <i class="fa-brands fa-github"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-medium"></i>
+            <a href="https://github.com/samnjab?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sam-jaberi-310b92257" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-medium"></i></a>
         </ul>
     </header> 
     <main>
-        <section class="about" id="#about">
+        <section class="about" id="about">
             <div class="divider"></div>
             <div class="pagination">
-                <a class="linked home" href="#home">
+                <span class="linked home-nav" href="#home">
                     <p>Home</p>
-                </a>
-                <a class="active about" href="#about">
+                </span>
+                <span class="active about-nav" href="#about">
                     <p>About</p>
-                </a>
-                <a class="linked projects" href="#projects">
+                </span>
+                <span class="linked projects-nav" href="#projects">
                     <p>Projects</p>
-                </a>
-                <a class="linked services" href="#services">
+                </span>
+                <span class="linked services-nav" href="#services">
                     <p>Services</p>
-                </a>
-                <a class="linked contact" href="#contact">
+                </span>
+                <span class="linked contact-nav" href="#contact">
                     <p>Contact</p>
-                </a>
+                </span>
             </div>
             <div class="wrapper">
                 <div class="header">
@@ -147,10 +147,12 @@
                     <p> Sam is an Iranian-Canadian Developer based in Toronto, Canada. She is of Persian and Turkish descent, and
                     grew up in a small town near Tehran where she excelled at mathematics and computer science. She moved to Toronto at 17 to attend
                     the University of Toronto where she majored in Neuroscience. </p>
-                    <p>Aside from being a tech creator, Sam is a music fanatic, avid boxer and reader. <br> Few things in life however, have topped her number one obsession since birth: turning complex problems into elegant solutions. </p>
-                    <div class="trivia">
-                        <h4>Trivia</h4>
-                        <img src="./assets/ui.png" alt="trivia-about-sam-icon">
+                    <p>Aside from being a tech creator, Sam is a music fanatic, avid boxer and reader. <br> Few things in life however, have topped her number one obsession: turning complex problems into elegant solutions. </p>
+                    <!-- <div class="trivia">
+                        <div class="header">
+                            <img src="./assets/ui.png" alt="trivia-about-sam-icon">
+                            <h4>Trivia</h4>
+                        </div>
                         <div class="music">
                             <p>On Repeat:</p>
                         <iframe style="border-radius:12px"
@@ -159,12 +161,12 @@
                             allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                         </div>
                         <div class="books">
+                            <h4>
+                                <a style="text-decoration: none;" rel="nofollow"
+                                    href="https://www.goodreads.com/review/list/52181983-sam-jaberi?shelf=stacked&utm_medium=api&utm_source=grid_widget">Stacked
+                                    by Sam</a>
+                            </h4>
                                 <div id="gr_grid_widget_1675037964">
-                                    <h2>
-                                        <a style="text-decoration: none;" rel="nofollow"
-                                            href="https://www.goodreads.com/review/list/52181983-sam-jaberi?shelf=stacked&utm_medium=api&utm_source=grid_widget">Stacked
-                                            by Sam</a>
-                                    </h2>
                                     <div class="gr_grid_container">
                                         <div class="gr_grid_book_container"><a title="The 48 Laws of Power" rel="nofollow"
                                                 href="https://www.goodreads.com/book/show/1303.The_48_Laws_of_Power"><img alt="The 48 Laws of Power"
@@ -211,35 +213,34 @@
                                     </div> 
                                 </div>
                         </div>
-                    </div>
-
-                    <p>Sam is graduate of Juno College of Technology (formerly HackerYou) Web Development Bootcamp. A unique combination of technical skills and a deep understanding of the human psychology drives her endless quest to uncover what makes us tick. 
+                    </div> -->
+                    <p>Sam is a graduate of Juno College of Technology (formerly HackerYou) Web Development Bootcamp. A unique combination of technical skills and a deep understanding of the human psychology drives her endless quest to uncover what makes us tick. 
                     </p>
                     
                     <button class="active-btn">Download CV</button>
-                    <button class="inactive-btn">View Work</button>
+                    <a href="#projects"><button class="inactive-btn">View Work</button></a>
                 </div>
             </div>
         </section>
 
-        <section class="skills" id="#skills">
+        <section class="skills" id="skills">
             <div class="divider"></div>
             <div class="pagination">
-                <a class="linked home" href="#home">
+                <span class="linked home-nav" href="#home">
                     <p>Home</p>
-                </a>
-                <a class="active about" href="#about">
+                </span>
+                <span class="active about-nav" href="#about">
                     <p>About</p>
-                </a>
-                <a class="linked projects" href="#projects">
+                </span>
+                <span class="linked projects-nav" href="#projects">
                     <p>Projects</p>
-                </a>
-                <a class="linked services" href="#services">
+                </span>
+                <span class="linked services-nav" href="#services">
                     <p>Services</p>
-                </a>
-                <a class="linked contact" href="#contact">
+                </span>
+                <span class="linked contact-nav" href="#contact">
                     <p>Contact</p>
-                </a>
+                </span>
             </div>
             <div class="wrapper">
                 <div class="header">
@@ -345,24 +346,24 @@
                 </div>
             </div>
         </section>
-        <section class="education" id="#education">
+        <section class="education" id="education">
             <div class="divider"></div>
             <div class="pagination">
-                <a class="linked home" href="#home">
+                <span class="linked home-nav" href="#home">
                     <p>Home</p>
-                </a>
-                <a class="active about" href="#about">
+                </span>
+                <span class="active about-nav" href="#about">
                     <p>About</p>
-                </a>
-                <a class="linked projects" href="#projects">
+                </span>
+                <span class="linked projects-nav" href="#projects">
                     <p>Projects</p>
-                </a>
-                <a class="linked services" href="#services">
+                </span>
+                <span class="linked services-nav" href="#services">
                     <p>Services</p>
-                </a>
-                <a class="linked contact" href="#contact">
+                </span>
+                <span class="linked contact-nav" href="#contact">
                     <p>Contact</p>
-                </a>
+                </span>
             </div>
             <div class="wrapper">
                 <div class="header">
@@ -439,24 +440,24 @@
             </div>
         </section>
 
-        <section class="projects" id="#projects">
+        <section class="projects" id="projects">
             <div class="divider"></div>
             <div class="pagination">
-                <a class="linked home" href="#home">
+                <span class="linked home-nav" href="#home">
                     <p>Home</p>
-                </a>
-                <a class="linked about" href="#about">
+                </span>
+                <span class="linked about-nav" href="#about">
                     <p>About</p>
-                </a>
-                <a class="active projects" href="#projects">
+                </span>
+                <span class="active projects-nav" href="#projects">
                     <p>Projects</p>
-                </a>
-                <a class="linked services" href="#services">
+                </span>
+                <span class="linked services-nav" href="#services">
                     <p>Services</p>
-                </a>
-                <a class="linked contact" href="#contact">
+                </span>
+                <span class="linked contact-nav" href="#contact">
                     <p>Contact</p>
-                </a>
+                </span>
             </div>
             <div class="wrapper">
                 <div class="header">
@@ -506,21 +507,21 @@
         <section class="contact" id="contact">
             <div class="divider"></div>
             <div class="pagination">
-                <a class="linked home" href="#home">
+                <span class="linked home-nav" href="#home">
                     <p>Home</p>
-                </a>
-                <a class="linked about" href="#about">
+                </span>
+                <span class="linked about-nav" href="#about">
                     <p>About</p>
-                </a>
-                <a class="linked projects" href="#projects">
+                </span>
+                <span class="linked projects-nav" href="#projects">
                     <p>Projects</p>
-                </a>
-                <a class="linked services" href="#services">
+                </span>
+                <span class="linked services-nav" href="#services">
                     <p>Services</p>
-                </a>
-                <a class="active contact" href="#contact">
+                </span>
+                <span class="active contact-nav" href="#contact">
                     <p>Contact</p>
-                </a>
+                </span>
             </div>
             <div class="wrapper">
                 <fieldset>
@@ -539,10 +540,10 @@
                     <h2>Let's connect!</h2>
                     <p class="intro-text">Ready to work together on a design project? Want me on your team, or just want to say hello, how are ya? Fill out the form.</p>
                     <div class="socials">
-                        <i class="fa-brands fa-github"></i>
-                        <i class="fa-brands fa-linkedin"></i>
-                        <i class="fa-brands fa-instagram"></i>
-                        <i class="fa-brands fa-medium"></i>
+                        <a href="https://github.com/samnjab?tab=repositories" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sam-jaberi-310b92257" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" target="_blank"><i class="fa-brands fa-medium"></i></a>
                     </div>
                 </div>
                 
@@ -551,6 +552,7 @@
 
     </main> 
     <footer><p>© 2023 by Sam J.</p></footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>

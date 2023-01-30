@@ -24,7 +24,7 @@
         border:$amber 0.7px solid;
         border-radius: 20px;
     } 
-    a{
+    span{
         display:block;
         width: 18px;
         height: 18px;
@@ -52,21 +52,21 @@
             background-color: $amber;
             border: $amber 0.7px solid;
         }
-        &.home{
+        &.home-nav{
             &:hover{
                 p{
                     opacity:1;
                 }
             }
         }
-        &.about{
+        &.about-nav{
             &:hover{
                 p{
                     opacity:1;
                 }
             }
         }
-        &.projects{
+        &.projects-nav{
             &:hover{
                 p {
                     opacity: 1;
@@ -74,7 +74,7 @@
 
             }
         }
-        &.services{
+        &.services-nav{
             &:hover{
                 p {
                     opacity: 1;
@@ -82,7 +82,7 @@
 
             }
         }
-        &.contact{
+        &.contact-nav{
             &:hover{
                 p {
                     opacity: 1;

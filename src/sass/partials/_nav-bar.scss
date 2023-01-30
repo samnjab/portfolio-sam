@@ -4,15 +4,18 @@
     @include nav-styler();
     width: 100%;
     @include flex-center(row, space-between, baseline);
+    li{
+        cursor: pointer;
+    }
     .active {
         border-bottom: $amber 5px solid;
     }
 
     .linked {
         border-bottom: rgb(255, 255, 255, 0) 5px solid;
-        a{
-            color:$blue-off-white;
-        }
+    }
+    a{
+        color:$blue-off-white;
     }
 }
 

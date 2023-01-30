@@ -4,9 +4,9 @@ fieldset {
     padding:0;
     form {
         border: $amber solid 1px;
-        border-radius:5px;
+        border-radius:15px;
         background-color: $deep-black;
-        padding:1rem;
+        padding:2rem;
         @include flex-center(column, space-around, center);
         input {
             background-color: $deep-black;
