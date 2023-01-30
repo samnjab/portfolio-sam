@@ -1,0 +1,13 @@
+@use './variables' as *;
+
+.scroll-container {
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    height:100vh;
+}
+
+.scroll-area {
+    scroll-snap-align: start;
+    // height:100vh;
+}
