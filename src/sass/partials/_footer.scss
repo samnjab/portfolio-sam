@@ -1,0 +1,7 @@
+@use './variables' as *;
+footer{
+    @include flex-center(row, center, center);
+    padding:0.25rem 0;
+    background-color: $thin-black;
+    border-top:$grey 1px solid;
+}

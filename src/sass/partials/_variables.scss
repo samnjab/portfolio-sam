@@ -1,6 +1,6 @@
 
 $min-dim:320px;
-$mobile:480px;
+$mobile:500px;
 $tablet:768px;
 $sm-scr:1024px;
 $lg-scr:1200px;
@@ -84,13 +84,7 @@ $blue:#1282A2;
     height: $height;
     background-color: $deep-black;
 }
-@mixin divider() {
-    width: 90%;
-    margin:0 auto;
-    margin-bottom:2rem;
-    height: 1px;
-    background-color:$grey;
-}
+
 @mixin sub-header-styler {
     font-size: 36px;
     font-weight: 500;

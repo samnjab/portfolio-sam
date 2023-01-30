@@ -1,6 +1,7 @@
 @use './variables' as *;
 
 section{
+    padding:1.5rem 0;
     background-color: $deep-black;
     position:relative;
     .pagination{

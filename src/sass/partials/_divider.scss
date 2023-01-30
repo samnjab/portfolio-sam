@@ -1,5 +1,9 @@
 @use './variables' as *;
 
 .divider{
-    @include divider();
+    width: 100%;
+    margin:0 auto;
+    margin-bottom:2rem;
+    height: 1px;
+    background-color:$grey;
 }
