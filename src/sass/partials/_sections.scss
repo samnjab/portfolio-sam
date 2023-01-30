@@ -1,7 +1,9 @@
 @use './variables' as *;
 
 section{
-    min-height:100vh;
+    @media (min-width:$tablet) {
+        min-height:100vh;
+    }
     padding:1.5rem 0;
     background-color: $deep-black;
     position:relative;
